@@ -1,0 +1,68 @@
+name: kitify
+description: "All-in-one tools, boosting your efficiency!"
+publish_to: 'none'
+version: 0.0.1+1
+
+environment:
+  sdk: ^3.6.0
+  flutter: ^3.27.1
+
+dependencies:
+  cached_network_image: ^3.4.1
+  collection: ^1.19.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_svg: ^2.0.17
+  freezed_annotation: ^2.4.4
+  go_router: ^14.6.3
+  google_fonts: ^6.2.1
+  intl: any
+  json_annotation: ^4.9.0
+  logging: ^1.3.0
+  provider: ^6.1.2
+  share_plus: ^7.2.2
+  shared_preferences: ^2.3.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  mocktail_image_network: ^1.2.0
+  mocktail: ^1.0.4
+  integration_test:
+    sdk: flutter
+  build_runner: ^2.4.14
+  freezed: ^2.5.8
+  json_serializable: ^6.9.2
+  msix: ^3.16.8
+
+flutter:
+  uses-material-design: true
+  assets:
+    - logo/
+    - assets/activities.json
+    - assets/destinations.json
+    - assets/logo.svg
+    - assets/user.jpg
+
+# If you publish your app to the Microsoft Store,
+# the installation package will be signed automatically by the store.
+msix_config:
+  display_name: Kitify
+  logo_path: logo\logo-512.png
+  languages: en-us, zh-cn
+  architecture: x64
+  capabilities: "internetClient,picturesLibrary"
+  install_certificate: false
+
+  # msix_version: 1.0.0.0 # If not set, the value of `version` is used
+  # With Your Own Certificate
+  certificate_path: CERTIFICATE_PATH_PLACEHOLDER
+  certificate_password: CERTIFICATE_PASSWORD_PLACEHOLDER
+
+  # For Publish To Windows Store
+  identity_name: IDENTITY_NAME_PLACEHOLDER
+  publisher: PUBLISHER_PLACEHOLDER
+  publisher_display_name: PUBLISHER_NAME_PLACEHOLDER

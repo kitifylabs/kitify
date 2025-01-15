@@ -1,0 +1,38 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+<Package Name="Kitify" Manufacturer="Insco Ltd" Version="0.0.1.2" UpgradeCode="0d8a8893-6f44-45e1-b5ef-7b08ad356ddd">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <!-- Set an icon for Windows Settings > Apps -->
+    <Property Id="ARPPRODUCTICON" Value="Kitify.exe" />
+
+    <!-- Block 64-bit Win8/WinServer2012 (or earlier) and all 32-bit from installing -->
+    <Launch Message="Kitify only supports 64-bit Windows 10/11!" Condition="Installed OR VersionNT64 >= 603"/>
+
+    <MediaTemplate EmbedCab="yes"/>
+
+    <Feature
+        Id="Main"
+        Title="Kitify"
+        Description="All-in-one tools, boosting your efficiency!"
+        AllowAbsent="no"
+        AllowAdvertise="no">
+      <!-- Flutter output -->
+      <ComponentGroupRef Id="BaseComponents" />
+      <ComponentGroupRef Id="DataComponents" />
+      <ComponentGroupRef Id="FlutterAssetComponents" />
+      <ComponentGroupRef Id="FlutterAppAssetComponents" />
+      <ComponentGroupRef Id="FlutterFontsComponents" />
+      <ComponentGroupRef Id="ShaderComponents" />
+    </Feature>
+    <Feature
+      Id="Shortcut"
+      Title="Kitify"
+      Description="All-in-one tools, boosting your efficiency!"
+      AllowAbsent="yes"
+      AllowAdvertise="no"
+      Level="1">
+        <ComponentGroupRef Id="BaseComponents" />
+        <ComponentRef Id="DesktopShortcutComponent"/>
+    </Feature>
+  </Package>
+</Wix>

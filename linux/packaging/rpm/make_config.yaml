@@ -1,0 +1,24 @@
+display_name: Kitify
+icon: logo/logo-512.png
+summary: All-in-one tools, boosting your efficiency!
+description: All-in-one tools, boosting your efficiency!
+group: Application/Emulator
+vendor: kjxbyz
+packager: kjxbyz
+packagerEmail: support@kitifylabs.com
+license: GPL-3.0-only
+url: https://github.com/kitifylabs/kitify
+build_arch: x86_64
+
+metainfo: linux/shared/kitify.metainfo.xml
+
+keywords:
+  - Kitify
+
+generic_name: Kitify
+
+categories:
+  - Development
+  - Utility
+
+startup_notify: true

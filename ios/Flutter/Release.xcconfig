@@ -1,0 +1,2 @@
+#include? "Pods/Target Support Files/Pods-Kitify/Pods-Kitify.release.xcconfig"
+#include "Generated.xcconfig"

@@ -1,0 +1,22 @@
+display_name: Kitify
+package_name: kitify
+maintainer:
+  name: kjxbyz
+  email: support@kitifylabs.com
+priority: optional
+section: x11
+installed_size: 6604
+essential: false
+icon: logo/logo-512.png
+metainfo: linux/shared/kitify.metainfo.xml
+
+keywords:
+  - Kitify
+
+generic_name: Kitify
+
+categories:
+  - Development
+  - Utility
+
+startup_notify: true

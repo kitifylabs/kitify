@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Generator for metainfo & .desktop files:
+    https://www.freedesktop.org/software/appstream/metainfocreator/#/
+    https://docs.flathub.org/banner-preview/
+    https://www.freedesktop.org/software/appstream/docs/chap-Quickstart.html#sect-Quickstart-DesktopApps
+-->
+<component type="desktop-application">
+    <id>com.kitifylabs.Kitify</id>
+    <provides>
+        <id>kitify</id>
+    </provides>
+    <name>Kitify</name>
+    <summary>All-in-one tools, boosting your efficiency</summary>
+    <summary xml:lang="zh">一站式工具，提升你的效率</summary>
+    <developer id="com.kjxbyz">
+        <name>Insco Ltd</name>
+    </developer>
+    <url type="bugtracker">https://github.com/kitifylabs/kitify/issues</url>
+    <url type="homepage">https://www.kitifylabs.com</url>
+    <url type="donation">https://buymeacoffee.com/wangying</url>
+    <url type="faq">https://github.com/kitifylabs/kitify/discussions</url>
+    <url type="translate">https://crowdin.com/project/kitify</url>
+    <url type="vcs-browser">https://github.com/kitifylabs/kitify</url>
+    <metadata_license>MIT</metadata_license>
+    <project_license>GPL-3.0-only</project_license>
+    <branding>
+        <color type="primary" scheme_preference="light">#e0f2f7</color>
+        <color type="primary" scheme_preference="dark">#1d2a36</color>
+    </branding>
+    <supports>
+        <control>pointing</control>
+        <control>keyboard</control>
+    </supports>
+    <recommends>
+        <control>touch</control>
+    </recommends>
+    <description>
+        <p>Introducing Kitify - All-in-one tools, boosting your efficiency!</p>
+        <p xml:lang="zh">介绍Kitify - 一站式工具，提升你的效率！</p>
+    </description>
+    <launchable type="desktop-id">com.kitifylabs.Kitify.desktop</launchable>
+    <screenshots>
+        <screenshot type="default">
+            <image>https://raw.githubusercontent.com/kitifylabs/kitify/v0.0.1+1/screenshots/desktop.png</image>
+            <caption>Default screenshot for desktop</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/kitifylabs/kitify/v0.0.1+1/screenshots/desktop-zh.png</image>
+            <caption>Support Chinese</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/kitifylabs/kitify/v0.0.1+1/screenshots/desktop-dark.png</image>
+            <caption>Dark Mode</caption>
+        </screenshot>
+    </screenshots>
+    <releases>
+        <release version="v0.0.1+1" date="2024-12-21">
+            <url type="details">https://github.com/kitifylabs/kitify/blob/v0.0.1+1/CHANGELOG.md</url>
+        </release>
+    </releases>
+    <content_rating type="oars-1.1">
+        <content_attribute id="social-chat">intense</content_attribute>
+        <content_attribute id="social-audio">intense</content_attribute>
+        <content_attribute id="social-contacts">intense</content_attribute>
+    </content_rating>
+    <update_contact>support@kitifylabs.com</update_contact>
+</component>
