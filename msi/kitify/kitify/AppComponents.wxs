@@ -88,7 +88,7 @@
 
     <!-- Desktop shortcut (user's choice) -->
     <Component Id="DesktopShortcutComponent" Directory="DesktopFolder">
-      <RegistryValue Root="HKCU" Key="SOFTWARE\Insco Ltd\Kitify" Name="EnableDesktopShortcut" Value="1" />
+      <RegistryValue Root="HKCU" Key="SOFTWARE\Insco\Kitify" Name="EnableDesktopShortcut" Value="1" />
       <Shortcut Name="Kitify" Description="All-in-one tools, boosting your efficiency!" Directory="DesktopFolder" Target="[#Kitify.exe]" />
     </Component>
   </Fragment>

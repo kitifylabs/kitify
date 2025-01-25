@@ -13,8 +13,8 @@
     <name>Kitify</name>
     <summary>All-in-one tools, boosting your efficiency</summary>
     <summary xml:lang="zh">一站式工具，提升你的效率</summary>
-    <developer id="com.kjxbyz">
-        <name>Insco Ltd</name>
+    <developer id="io.insco">
+        <name>Insco</name>
     </developer>
     <url type="bugtracker">https://github.com/kitifylabs/kitify/issues</url>
     <url type="homepage">https://www.kitifylabs.com</url>
