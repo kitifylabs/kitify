@@ -11,4 +11,16 @@
   <ItemGroup>
     <Content Include="$(IconPath)" />
   </ItemGroup>
+  <ItemGroup>
+    <HarvestDirectory Include="$(FLUTTER_BUILD_OUTPUT_DIR)\data\flutter_assets">
+      <DirectoryRefId>FLUTTERASSETSFOLDER</DirectoryRefId>
+      <ComponentGroupName>FlutterAssetsComponents</ComponentGroupName>
+      <SuppressRootDirectory>true</SuppressRootDirectory>
+    </HarvestDirectory>
+
+    <BindPath Include="$(FLUTTER_BUILD_OUTPUT_DIR)\data\flutter_assets" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.Heat" />
+  </ItemGroup>
 </Project>

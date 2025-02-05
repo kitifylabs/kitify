@@ -19,10 +19,7 @@
       <!-- Flutter output -->
       <ComponentGroupRef Id="BaseComponents" />
       <ComponentGroupRef Id="DataComponents" />
-      <ComponentGroupRef Id="FlutterAssetComponents" />
-      <ComponentGroupRef Id="FlutterAppAssetComponents" />
-      <ComponentGroupRef Id="FlutterFontsComponents" />
-      <ComponentGroupRef Id="ShaderComponents" />
+      <ComponentGroupRef Id="FlutterAssetsComponents" />
     </Feature>
     <Feature
       Id="Shortcut"
