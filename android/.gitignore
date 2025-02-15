@@ -12,3 +12,6 @@ key.properties
 key-pro.properties
 **/*.keystore
 **/*.jks
+
+.kotlin
+.cxx
